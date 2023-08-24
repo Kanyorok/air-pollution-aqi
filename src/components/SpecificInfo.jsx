@@ -6,30 +6,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const SpecificInfo = ({ city }) => {
-  const isOddRow = city.styleNo % 2 === 1;
+  const isOddRow = city.id % 2 === 1;
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/${city.id}`);
+    navigate(`/${city.id}`, { state: { city } });
   };
 
   return (
     <>
       <tr className={isOddRow ? 'bg-[#e94988] text-white' : 'bg-[#df4782] text-white'}>
-        <td className="w-1/6 font-bold whitespace-wrap px-4 py-4">
-          <div className="flex flex-col items-end">
+        <td className="w-1/6 font-bold whitespace-wrap px-2 py-3">
+          <div className="flex flex-col items-baseline">
             <h2 className="font-bold">City</h2>
-            <h3>{city.cityName}</h3>
+            <h3>{city.cityName ? city.cityName[0] : ''}</h3>
           </div>
         </td>
-        <td className="w-1/6 font-bold whitespace-wrap px-2 py-4">
-          <div className="flex flex-col items-end">
+        <td className="w-1/6 font-bold whitespace-wrap px-2 py-3">
+          <div className="flex flex-col items-baseline">
             <h2 className="font-bold">Country</h2>
             <h3>{city.country}</h3>
           </div>
         </td>
-        <td className="w-1/6 font-bold whitespace-wrap px-4 py-4">
-          <div className="flex flex-col items-end">
+        <td className="w-1/6 font-bold whitespace-wrap px-2 py-3">
+          <div className="flex flex-col items-baseline">
             <h2 className="font-bold">Population</h2>
             <h3>
               {millify(city.population)}

@@ -10,7 +10,6 @@ const App = () => (
         <Route path="/:id" element={<Aqidata />} />
       </Routes>
     </Router>
-
   </div>
 );
 

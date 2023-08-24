@@ -4,13 +4,13 @@ import { fetchCitiesCountries } from '../../utils/Apicall';
 export const displayCities = createAsyncThunk('fetch/cities', async () => {
   const retrievedCities = await fetchCitiesCountries();
   const cityDisplay = retrievedCities.map((city, index) => ({
-    id: city.id,
-    cityName: city.city,
-    country: city.country,
+    id: index + 1,
+    cityName: city.capital,
+    country: city.name.common,
     population: city.population,
-    latitude: city.lat,
-    longitude: city.lng,
-    styleNo: index + 1,
+    coordinates: city.capitalInfo.latlng,
+    flag: city.flags.png,
+    alt: city.flags.alt,
   }));
   return cityDisplay;
 });
