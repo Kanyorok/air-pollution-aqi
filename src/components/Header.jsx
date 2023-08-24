@@ -5,7 +5,7 @@ import { faGear, faMicrophone, faAngleLeft } from '@fortawesome/free-solid-svg-i
 import { Link } from 'react-router-dom';
 
 const Header = ({ title }) => (
-  <div className="flex bg-[#802c4b] border-b-2 pt-3 pb-3">
+  <div className="flex bg-[#df4782] border-b-2 pt-3 pb-3">
     {title !== 'Air-Pollution-AQI DETECTOR' && (
     <Link type="button" to="/">
       <FontAwesomeIcon icon={faAngleLeft} className="mx-3 text-white" />
