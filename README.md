@@ -71,7 +71,7 @@
 
 ## 🚀 Video Link <a name="live-demo"></a>
 
-- [Live Demo Link](https://climaticvals.onrender.com/)
+- [Video Presentation](https://www.loom.com/share/0d9192773d7a48a5b4548c1ffa2ae39c?sid=a7145172-f5c0-4774-9325-7b594e690704)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
