@@ -11,6 +11,7 @@ export const displayCities = createAsyncThunk('fetch/cities', async () => {
     coordinates: city.capitalInfo.latlng,
     flag: city.flags.png,
     alt: city.flags.alt,
+    arms: city.coatOfArms.svg,
   }));
   return cityDisplay;
 });
@@ -33,7 +34,7 @@ const citySlice = createSlice({
         state.loading = 'Succeeded';
       })
       .addCase(displayCities.rejected, (state) => {
-        state.loading = 'failed load missions';
+        state.loading = 'failed';
       });
   },
 });
