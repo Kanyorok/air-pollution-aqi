@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/air-pollution-aqi/static/css/main.6fb32519.css",
+    "main.js": "/air-pollution-aqi/static/js/main.5a669e30.js",
+    "static/js/787.a8a72327.chunk.js": "/air-pollution-aqi/static/js/787.a8a72327.chunk.js",
+    "index.html": "/air-pollution-aqi/index.html",
+    "main.6fb32519.css.map": "/air-pollution-aqi/static/css/main.6fb32519.css.map",
+    "main.5a669e30.js.map": "/air-pollution-aqi/static/js/main.5a669e30.js.map",
+    "787.a8a72327.chunk.js.map": "/air-pollution-aqi/static/js/787.a8a72327.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fb32519.css",
+    "static/js/main.5a669e30.js"
+  ]
+}
