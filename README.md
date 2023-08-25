@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://climaticvals.onrender.com/)
+- [Live Demo Link](https://climateglobal.onrender.com/)
 
 ## 🚀 Video Link <a name="live-demo"></a>
 
